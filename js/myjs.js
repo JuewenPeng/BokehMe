@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // var cmp1 = document.getElementById("compare-method-ebb-277")
 // console.log(cmp1)
-// cmp1.style.setProperty('--image1', "url('../imgs/BLB/bokeh_04_05_ours.jpg')")
+// cmp1.style.setProperty('--image1', "url('../img/BLB/bokeh_04_05_ours.jpg')")
 
 
 var blb_K = 4;
@@ -97,16 +97,16 @@ var blb_scene = 277
 function getMethodPathBLB(method) {
     var path
     if (method == 'image') {
-        path = '../imgs/BLB/data/' + blb_scene + '/image.jpg'
+        path = '../img/BLB/data/' + blb_scene + '/image.jpg'
     }
     else if (method == 'disparity') {
-        path = '../imgs/BLB/data/' + blb_scene + '/disparity.jpg'
+        path = '../img/BLB/data/' + blb_scene + '/disparity.jpg'
     }
     else if (method == 'gt') {
-        path = '../imgs/BLB/data/' + blb_scene + '/bokeh_0' + blb_K + '_0' + blb_df + '.jpg'
+        path = '../img/BLB/data/' + blb_scene + '/bokeh_0' + blb_K + '_0' + blb_df + '.jpg'
     }
     else {
-        path = '../imgs/BLB/' + method + '/' + blb_scene + '/bokeh_0' + blb_K + '_0' + blb_df + '.jpg'
+        path = '../img/BLB/' + method + '/' + blb_scene + '/bokeh_0' + blb_K + '_0' + blb_df + '.jpg'
     }
     return path
 }
@@ -191,7 +191,7 @@ var ebb_scene = 218
 
 
 function getMethodPathEBB(method) {
-    var path = '../imgs/EBB400/' + method + '/' + ebb_scene + '.jpg'
+    var path = '../img/EBB400/' + method + '/' + ebb_scene + '.jpg'
     return path
 }
 
@@ -242,7 +242,7 @@ var ipb_scene = '0001'
 
 
 function getMethodPathIPB(method) {
-    var path = '../imgs/IPB/' + method + '/IMG_' + ipb_scene + '.jpg'
+    var path = '../img/IPB/' + method + '/IMG_' + ipb_scene + '.jpg'
     return path
 }
 
@@ -294,7 +294,7 @@ function selectMethodIPB(side) {
 //      // alert(valOption);
 //     // var txtOption = this.options[this.selectedIndex].innerHTML; //获取option中间的文本
 //      // alert(txtOption);
-//     var path = '../imgs/BLB/277/' + val + '.jpg'
+//     var path = '../img/BLB/277/' + val + '.jpg'
 //     var compare = document.getElementById("compare-method-ebb-277")
 //     compare.style.setProperty('--image1', "url(" + path + ")")
 // }
