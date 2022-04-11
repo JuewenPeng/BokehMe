@@ -8,3 +8,14 @@
 <!-- > **NOTE**: There is a citation mistake in the paper of conference version. The disparity maps in the EBB400 dataset are predicted by MiDaS [1] instead of DPT [2]. We correct it in the arXiv version. <br/>
 > [1] Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer <br/>
 > [2] Vision Transformers for Dense Prediction -->
+
+If you find our work useful in your research, please cite our paper.
+
+```
+@inproceedings{Peng2022BokehMe,
+  title = {BokehMe: When Neural Rendering Meets Classical Rendering},
+  author = {Peng, Juewen and Cao, Zhiguo and Luo, Xianrui and Lu, Hao and Xian, Ke and Zhang, Jianming},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2022}
+}
+```
