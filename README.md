@@ -16,7 +16,7 @@
 This repository is the official PyTorch implementation of the paper "BokehMe: When Neural Rendering Meets Classical Rendering".
 
 
-> **NOTE**: There is a citation mistake in the paper of the conference version. In section 4.1, the disparity maps of the EBB400 dataset are predicted by MiDaS [1] instead of DPT [2]. <!-- We have corrected it in the arXiv version. We apologize for this oversight and for any confusion that it may have caused.  --><br/>
+**NOTE**: There is a citation mistake in the paper of the conference version. In section 4.1, the disparity maps of the EBB400 dataset are predicted by MiDaS [1] instead of DPT [2]. <!-- We have corrected it in the arXiv version. We apologize for this oversight and for any confusion that it may have caused.  --><br/>
 > [1] Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer <br/>
 > [2] Vision Transformers for Dense Prediction
 
