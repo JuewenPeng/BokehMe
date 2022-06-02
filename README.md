@@ -9,11 +9,13 @@
 
 <sup>1</sup>Huazhong University of Science and Technology, <sup>2</sup>Adobe Research
 
----
+<p align="center">
+<img src=https://user-images.githubusercontent.com/38718148/171405815-b3cc8799-27cd-457e-89df-686695187554.jpg />
+</p>
 
 ### [Project](https://juewenpeng.github.io/BokehMe/) | [Paper](https://github.com/JuewenPeng/BokehMe/blob/main/pdf/BokehMe.pdf) | [Supp](https://github.com/JuewenPeng/BokehMe/blob/main/pdf/BokehMe-supp.pdf) | [Data](#blb-dataset)
 
-This repository is the official PyTorch implementation of the paper "BokehMe: When Neural Rendering Meets Classical Rendering".
+This repository is the official PyTorch implementation of the CVPR 2022 paper "BokehMe: When Neural Rendering Meets Classical Rendering".
 
 
 **NOTE**: There is a citation mistake in the paper of the conference version. In section 4.1, the disparity maps of the EBB400 dataset are predicted by MiDaS [1] instead of DPT [2]. <!-- We have corrected it in the arXiv version. We apologize for this oversight and for any confusion that it may have caused.  --><br/>
@@ -34,15 +36,15 @@ pip install -r requirements.txt
 ```
 python demo.py --image_path 'inputs/21.jpg' --disp_path 'inputs/21.png' --save_dir 'outputs' --K 60 --disp_focus 90/255 --gamma 4 --highlight
 ```
-- `image_path`:  path of the input all-in-focus image (of arbitrary resolution)
+- `image_path`:  path of the input all-in-focus image
 - `disp_path`: path of the input disparity map (predicted by [DPT](https://github.com/isl-org/DPT) in this example)
 - `save_dir`: directory to save the results
 - `K`: blur parameter
 - `disp_focus`: refocused disparity (range from 0 to 1)
 - `gamma`: gamma value (range from 1 to 5)
-- `highlight`: forcibly enhance RGB values of highlights before rendering for more obvious bokeh balls
+- `highlight`: enhance RGB values of highlights before rendering for stunning bokeh balls
 
-See `demo.py` for more details. Note that it may take some time to run if the image resolution and `K` are very large. 
+See `demo.py` for more details.
 
 -->
 
