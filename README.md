@@ -13,7 +13,7 @@
 <img src=https://user-images.githubusercontent.com/38718148/171405815-b3cc8799-27cd-457e-89df-686695187554.jpg />
 </p>
 
-### [Project](https://juewenpeng.github.io/BokehMe/) | [Paper](https://github.com/JuewenPeng/BokehMe/blob/main/pdf/BokehMe.pdf) | [Supp](https://github.com/JuewenPeng/BokehMe/blob/main/pdf/BokehMe-supp.pdf) | [Data](#blb-dataset)
+### [Project](https://juewenpeng.github.io/BokehMe/) | [Paper](https://github.com/JuewenPeng/BokehMe/raw/main/pdf/BokehMe.pdf) | [Supp](https://github.com/JuewenPeng/BokehMe/raw/main/pdf/BokehMe-supp.pdf) | [Data](#blb-dataset)
 
 This repository is the official PyTorch implementation of the CVPR 2022 paper "BokehMe: When Neural Rendering Meets Classical Rendering".
 
