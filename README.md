@@ -54,8 +54,8 @@ The BLB dataset is synthesized by Blender 2.93. It contains 10 scenes, each cons
 
 **Instructions**: 
 - EXR images can be loaded by `image = cv2.imread(IMAGE_PATH, -1)[..., :3].astype(np.float32) ** (1/2.2)` . The loaded images are in BGR, so you can convert them to RGB by `image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)` if necessary.
-- EXR depth maps can be loaded by `depth = cv2.imread(DEPTH_PATH, -1)[..., 0].astype(np.float32)`. You can convert them to disparity maps by `disp = 1 / depth`, and the disparity maps have been normalized to `[0, 1]` for all scenes.
-- NOTE: Some pixel values of images may be larger than 1 for highlights (but mostly smaller than 1). Considering the fact that some rendering methods can only output values between 0 and 1, we clip the numerical ranges of the predicted bokeh images and the real ones to `[0, 1]` before evaluation. The main reason for this phenomenon (image values exceeding 1) is that the EXR images exported from Blender are in linear space, and we only process them with gamma 2.2 correction without tone mapping. We will improve it in the furture.
+- EXR depth maps can be loaded by `depth = cv2.imread(DEPTH_PATH, -1)[..., 0].astype(np.float32)`. You can convert them to disparity maps by `disp = 1 / depth`. Note that it is **unnecesary** to normalize the disparity maps since we have pre-processed them to ensure that the signed defocus maps calculated by `K * (disp - disp_focus)` are in line with the experimental settings of the paper.
+- NOTE: Some pixel values of images may be larger than 1 for highlights (but mostly smaller than 1). Considering the fact that some rendering methods can only output values between 0 and 1, we clip the numerical ranges of the predicted bokeh images and the real ones to [0, 1] before evaluation. The main reason for this phenomenon (image values exceeding 1) is that the EXR images exported from Blender are in linear space, and we only process them with gamma 2.2 correction without tone mapping. We will improve it in the future.
 
 ## Citation
 If you find our work useful in your research, please cite our paper.
